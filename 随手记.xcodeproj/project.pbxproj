@@ -19,6 +19,12 @@
 		D6BE0E471871B68D00A8A137 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6BE0E2F1871B68D00A8A137 /* UIKit.framework */; };
 		D6BE0E4F1871B68D00A8A137 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D6BE0E4D1871B68D00A8A137 /* InfoPlist.strings */; };
 		D6BE0E511871B68D00A8A137 /* ___Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = D6BE0E501871B68D00A8A137 /* ___Tests.m */; };
+		D6BE0E5F1871B87700A8A137 /* IIViewDeckController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6BE0E5C1871B87700A8A137 /* IIViewDeckController.m */; };
+		D6BE0E601871B87700A8A137 /* IIWrapController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6BE0E5E1871B87700A8A137 /* IIWrapController.m */; };
+		D6BE0E641871B8B600A8A137 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6BE0E621871B8B600A8A137 /* ViewController.m */; };
+		D6BE0E651871B8B600A8A137 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6BE0E631871B8B600A8A137 /* ViewController.xib */; };
+		D6BE0E691871B8E500A8A137 /* LeftModuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6BE0E671871B8E500A8A137 /* LeftModuleViewController.m */; };
+		D6BE0E6A1871B8E500A8A137 /* LeftModuleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6BE0E681871B8E500A8A137 /* LeftModuleViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +54,16 @@
 		D6BE0E4C1871B68D00A8A137 /* 随手记Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "随手记Tests-Info.plist"; sourceTree = "<group>"; };
 		D6BE0E4E1871B68D00A8A137 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D6BE0E501871B68D00A8A137 /* ___Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "___Tests.m"; sourceTree = "<group>"; };
+		D6BE0E5B1871B87700A8A137 /* IIViewDeckController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IIViewDeckController.h; sourceTree = "<group>"; };
+		D6BE0E5C1871B87700A8A137 /* IIViewDeckController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IIViewDeckController.m; sourceTree = "<group>"; };
+		D6BE0E5D1871B87700A8A137 /* IIWrapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IIWrapController.h; sourceTree = "<group>"; };
+		D6BE0E5E1871B87700A8A137 /* IIWrapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IIWrapController.m; sourceTree = "<group>"; };
+		D6BE0E611871B8B600A8A137 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D6BE0E621871B8B600A8A137 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D6BE0E631871B8B600A8A137 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		D6BE0E661871B8E500A8A137 /* LeftModuleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftModuleViewController.h; sourceTree = "<group>"; };
+		D6BE0E671871B8E500A8A137 /* LeftModuleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftModuleViewController.m; sourceTree = "<group>"; };
+		D6BE0E681871B8E500A8A137 /* LeftModuleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftModuleViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +123,15 @@
 		D6BE0E311871B68D00A8A137 /* 随手记 */ = {
 			isa = PBXGroup;
 			children = (
+				D6BE0E5A1871B87700A8A137 /* 主页滑动 */,
 				D6BE0E3A1871B68D00A8A137 /* AppDelegate.h */,
 				D6BE0E3B1871B68D00A8A137 /* AppDelegate.m */,
+				D6BE0E611871B8B600A8A137 /* ViewController.h */,
+				D6BE0E621871B8B600A8A137 /* ViewController.m */,
+				D6BE0E631871B8B600A8A137 /* ViewController.xib */,
+				D6BE0E661871B8E500A8A137 /* LeftModuleViewController.h */,
+				D6BE0E671871B8E500A8A137 /* LeftModuleViewController.m */,
+				D6BE0E681871B8E500A8A137 /* LeftModuleViewController.xib */,
 				D6BE0E3D1871B68D00A8A137 /* Images.xcassets */,
 				D6BE0E321871B68D00A8A137 /* Supporting Files */,
 			);
@@ -142,6 +165,17 @@
 				D6BE0E4D1871B68D00A8A137 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D6BE0E5A1871B87700A8A137 /* 主页滑动 */ = {
+			isa = PBXGroup;
+			children = (
+				D6BE0E5B1871B87700A8A137 /* IIViewDeckController.h */,
+				D6BE0E5C1871B87700A8A137 /* IIViewDeckController.m */,
+				D6BE0E5D1871B87700A8A137 /* IIWrapController.h */,
+				D6BE0E5E1871B87700A8A137 /* IIWrapController.m */,
+			);
+			path = "主页滑动";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +254,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6BE0E361871B68D00A8A137 /* InfoPlist.strings in Resources */,
+				D6BE0E6A1871B8E500A8A137 /* LeftModuleViewController.xib in Resources */,
+				D6BE0E651871B8B600A8A137 /* ViewController.xib in Resources */,
 				D6BE0E3E1871B68D00A8A137 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,7 +276,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6BE0E3C1871B68D00A8A137 /* AppDelegate.m in Sources */,
+				D6BE0E691871B8E500A8A137 /* LeftModuleViewController.m in Sources */,
+				D6BE0E601871B87700A8A137 /* IIWrapController.m in Sources */,
 				D6BE0E381871B68D00A8A137 /* main.m in Sources */,
+				D6BE0E5F1871B87700A8A137 /* IIViewDeckController.m in Sources */,
+				D6BE0E641871B8B600A8A137 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
