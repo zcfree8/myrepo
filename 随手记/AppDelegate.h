@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "IIViewDeckController.h"
+@class ViewController;
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property(strong,nonatomic) IIViewDeckController *viewDeckController;
+@property(strong,nonatomic) ViewController *viewController;
 @end

@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import "LeftModuleViewController.h"
 
 @implementation AppDelegate
 
@@ -14,7 +16,15 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    self.viewController=[[ViewController alloc]initWithNibName:@"ViewController" bundle:nil];
+    UINavigationController *centerNav=[[UINavigationController alloc]initWithRootViewController:self.viewController];
+    
+    LeftModuleViewController *leftView=[[LeftModuleViewController alloc]init];
+    
+    IIViewDeckController *vc=[[IIViewDeckController alloc]initWithCenterViewController:centerNav leftViewController:leftView];
+    vc.leftSize=40;
+    self.viewDeckController=vc;
+    self.window.rootViewController=self.viewDeckController;
     [self.window makeKeyAndVisible];
     return YES;
 }
