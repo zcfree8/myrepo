@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "IIViewDeckController.h"
 @interface ViewController : UIViewController
+- (IBAction)arrow:(id)sender;
 
 @end

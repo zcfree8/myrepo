@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D66C84581872881900B3A597 /* main_nav_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = D66C84501872881900B3A597 /* main_nav_arrow.png */; };
+		D66C84591872881900B3A597 /* main_nav_circle.png in Resources */ = {isa = PBXBuildFile; fileRef = D66C84511872881900B3A597 /* main_nav_circle.png */; };
+		D66C845A1872881900B3A597 /* nav_account.png in Resources */ = {isa = PBXBuildFile; fileRef = D66C84521872881900B3A597 /* nav_account.png */; };
+		D66C845B1872881900B3A597 /* nav_budget.png in Resources */ = {isa = PBXBuildFile; fileRef = D66C84531872881900B3A597 /* nav_budget.png */; };
+		D66C845C1872881900B3A597 /* nav_edit_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = D66C84541872881900B3A597 /* nav_edit_btn.png */; };
+		D66C845D1872881900B3A597 /* nav_report.png in Resources */ = {isa = PBXBuildFile; fileRef = D66C84551872881900B3A597 /* nav_report.png */; };
+		D66C845E1872881900B3A597 /* nav_setting.png in Resources */ = {isa = PBXBuildFile; fileRef = D66C84561872881900B3A597 /* nav_setting.png */; };
+		D66C845F1872881900B3A597 /* nav_year_trans.png in Resources */ = {isa = PBXBuildFile; fileRef = D66C84571872881900B3A597 /* nav_year_trans.png */; };
 		D6BE0E2C1871B68D00A8A137 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6BE0E2B1871B68D00A8A137 /* Foundation.framework */; };
 		D6BE0E2E1871B68D00A8A137 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6BE0E2D1871B68D00A8A137 /* CoreGraphics.framework */; };
 		D6BE0E301871B68D00A8A137 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6BE0E2F1871B68D00A8A137 /* UIKit.framework */; };
@@ -38,6 +46,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D66C84501872881900B3A597 /* main_nav_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_nav_arrow.png; sourceTree = "<group>"; };
+		D66C84511872881900B3A597 /* main_nav_circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_nav_circle.png; sourceTree = "<group>"; };
+		D66C84521872881900B3A597 /* nav_account.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_account.png; sourceTree = "<group>"; };
+		D66C84531872881900B3A597 /* nav_budget.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_budget.png; sourceTree = "<group>"; };
+		D66C84541872881900B3A597 /* nav_edit_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_edit_btn.png; sourceTree = "<group>"; };
+		D66C84551872881900B3A597 /* nav_report.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_report.png; sourceTree = "<group>"; };
+		D66C84561872881900B3A597 /* nav_setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_setting.png; sourceTree = "<group>"; };
+		D66C84571872881900B3A597 /* nav_year_trans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_year_trans.png; sourceTree = "<group>"; };
 		D6BE0E281871B68D00A8A137 /* 随手记.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "随手记.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6BE0E2B1871B68D00A8A137 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D6BE0E2D1871B68D00A8A137 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -90,6 +106,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D66C844F1872881900B3A597 /* icon */ = {
+			isa = PBXGroup;
+			children = (
+				D66C84501872881900B3A597 /* main_nav_arrow.png */,
+				D66C84511872881900B3A597 /* main_nav_circle.png */,
+				D66C84521872881900B3A597 /* nav_account.png */,
+				D66C84531872881900B3A597 /* nav_budget.png */,
+				D66C84541872881900B3A597 /* nav_edit_btn.png */,
+				D66C84551872881900B3A597 /* nav_report.png */,
+				D66C84561872881900B3A597 /* nav_setting.png */,
+				D66C84571872881900B3A597 /* nav_year_trans.png */,
+			);
+			path = icon;
+			sourceTree = "<group>";
+		};
 		D6BE0E1F1871B68D00A8A137 = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +164,7 @@
 				D6BE0E671871B8E500A8A137 /* LeftModuleViewController.m */,
 				D6BE0E681871B8E500A8A137 /* LeftModuleViewController.xib */,
 				D6BE0E3D1871B68D00A8A137 /* Images.xcassets */,
+				D66C844F1872881900B3A597 /* icon */,
 				D6BE0E321871B68D00A8A137 /* Supporting Files */,
 			);
 			path = "随手记";
@@ -253,8 +285,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D66C845B1872881900B3A597 /* nav_budget.png in Resources */,
+				D66C845F1872881900B3A597 /* nav_year_trans.png in Resources */,
+				D66C845D1872881900B3A597 /* nav_report.png in Resources */,
 				D6BE0E361871B68D00A8A137 /* InfoPlist.strings in Resources */,
+				D66C84581872881900B3A597 /* main_nav_arrow.png in Resources */,
+				D66C845A1872881900B3A597 /* nav_account.png in Resources */,
+				D66C845C1872881900B3A597 /* nav_edit_btn.png in Resources */,
+				D66C84591872881900B3A597 /* main_nav_circle.png in Resources */,
 				D6BE0E6A1871B8E500A8A137 /* LeftModuleViewController.xib in Resources */,
+				D66C845E1872881900B3A597 /* nav_setting.png in Resources */,
 				D6BE0E651871B8B600A8A137 /* ViewController.xib in Resources */,
 				D6BE0E3E1871B68D00A8A137 /* Images.xcassets in Resources */,
 			);
@@ -483,6 +523,7 @@
 				D6BE0E561871B68D00A8A137 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D6BE0E571871B68D00A8A137 /* Build configuration list for PBXNativeTarget "随手记Tests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +532,7 @@
 				D6BE0E591871B68D00A8A137 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -18,18 +18,18 @@
                     <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                     <items>
-                        <barButtonItem title="&lt;-" width="40" id="yon-wV-D90"/>
-                        <barButtonItem title="流水" width="40" id="odj-Ap-k6f"/>
-                        <barButtonItem title="账户" width="40" id="afW-Oo-Yac"/>
-                        <barButtonItem title="图表" width="40" id="xWW-6R-Quf"/>
-                        <barButtonItem title="预算" width="40" id="ehH-R0-tv3"/>
-                        <barButtonItem title="..." width="40" id="LE4-9C-rPh"/>
+                        <barButtonItem image="nav_edit_btn.png" width="40" id="yon-wV-D90"/>
                     </items>
+                    <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                 </toolbar>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>
+    <resources>
+        <image name="nav_edit_btn.png" width="30" height="32"/>
+    </resources>
 </document>

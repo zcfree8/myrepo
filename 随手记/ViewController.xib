@@ -18,13 +18,40 @@
                     <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                     <items>
-                        <barButtonItem title="Item" id="zRv-IZ-KPQ"/>
+                        <barButtonItem image="main_nav_arrow.png" width="40" id="zRv-IZ-KPQ">
+                            <inset key="imageInsets" minX="0.0" minY="0.0" maxX="18" maxY="0.0"/>
+                            <connections>
+                                <action selector="arrow:" destination="-1" id="wtz-kk-q2e"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem image="nav_year_trans.png" width="40" id="POx-2L-8fQ">
+                            <inset key="imageInsets" minX="0.0" minY="0.0" maxX="12" maxY="0.0"/>
+                        </barButtonItem>
+                        <barButtonItem image="nav_account.png" width="40" id="Z3C-TN-gZE"/>
+                        <barButtonItem image="nav_report.png" width="40" id="oTI-nj-VOJ"/>
+                        <barButtonItem image="nav_budget.png" width="40" id="vwI-rl-Cdf">
+                            <inset key="imageInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </barButtonItem>
+                        <barButtonItem image="nav_setting.png" width="40" id="imw-co-Psg">
+                            <inset key="imageInsets" minX="14" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </barButtonItem>
                     </items>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                 </toolbar>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>
+    <resources>
+        <image name="main_nav_arrow.png" width="20" height="17"/>
+        <image name="nav_account.png" width="35" height="35"/>
+        <image name="nav_budget.png" width="35" height="35"/>
+        <image name="nav_report.png" width="35" height="35"/>
+        <image name="nav_setting.png" width="35" height="35"/>
+        <image name="nav_year_trans.png" width="35" height="35"/>
+    </resources>
 </document>

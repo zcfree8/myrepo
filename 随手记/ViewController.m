@@ -37,4 +37,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)arrow:(id)sender {
+    [self.viewDeckController toggleLeftViewAnimated:YES];
+}
 @end
