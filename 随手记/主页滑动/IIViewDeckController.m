@@ -81,7 +81,7 @@ __typeof__(h) __h = (h);                                    \
 { __r.size.width - __w, __r.size.height - __h}   \
 };                                                 \
 })
-
+#define degreesToRadinas(x) (M_PI*(x)/180.0)
 #import "IIViewDeckController.h"
 #import <objc/runtime.h>
 #import <QuartzCore/QuartzCore.h>
@@ -1106,7 +1106,7 @@ static NSTimeInterval durationToAnimate(CGFloat pointsToAnimate, CGFloat velocit
         if (_controllers[side] == controller) return side;
     }
     
-    return NSNotFound;
+    return (unsigned int)NSNotFound;
 }
 
 
@@ -1117,7 +1117,7 @@ static NSTimeInterval durationToAnimate(CGFloat pointsToAnimate, CGFloat velocit
 }
 
 - (BOOL)checkCanCloseSide:(IIViewDeckSide)viewDeckSide {
-    return ![self isSideClosed:viewDeckSide] && [self checkDelegate:@selector(viewDeckController:shouldCloseViewSide:) side:viewDeckSide];
+    return ![self isSideClosed:viewDeckSide] && [self checkDelegate:@selector(viewDeckController:shouldCloseViewSide:animated:) side:viewDeckSide];
 }
 
 - (void)notifyWillOpenSide:(IIViewDeckSide)viewDeckSide animated:(BOOL)animated {
@@ -1292,6 +1292,7 @@ static NSTimeInterval durationToAnimate(CGFloat pointsToAnimate, CGFloat velocit
 
 - (BOOL)openSideView:(IIViewDeckSide)side animated:(BOOL)animated duration:(NSTimeInterval)duration completion:(IIViewDeckControllerBlock)completed {
     // if there's no controller or we're already open, just run the completion and say we're done.
+    [self setArrowToolDegreesWithRadinas:180];
     if (![self controllerForSide:side] || [self isSideOpen:side]) {
         if (completed) completed(self, YES);
         return YES;
@@ -1396,6 +1397,8 @@ static NSTimeInterval durationToAnimate(CGFloat pointsToAnimate, CGFloat velocit
 }
 
 - (BOOL)closeSideView:(IIViewDeckSide)side animated:(BOOL)animated duration:(NSTimeInterval)duration completion:(IIViewDeckControllerBlock)completed {
+        [self setArrowToolDegreesWithRadinas:0];
+    
     if ([self isSideClosed:side]) {
         if (completed) completed(self, YES);
         return YES;
@@ -1813,7 +1816,7 @@ static NSTimeInterval durationToAnimate(CGFloat pointsToAnimate, CGFloat velocit
         
         // perform completion and delegate call
         if (completed) completed(self, YES);
-        if (callDelegate) [self performDelegate:@selector(viewDeckController:didPreviewBounceViewSide:) side:viewDeckSide animated:YES];
+        if (callDelegate) [self performDelegate:@selector(viewDeckController:didPreviewBounceViewSide:animated:) side:viewDeckSide animated:YES];
     }];
     [self.slidingControllerView.layer addAnimation:animation forKey:@"previewBounceAnimation"];
     
@@ -2194,8 +2197,29 @@ static NSTimeInterval durationToAnimate(CGFloat pointsToAnimate, CGFloat velocit
     return [self limitOffset:ofs forOrientation:orientation]; 
 }
 
+//设置ArrowTool的角度
+-(void)setArrowToolDegreesWithRadinas:(double)newRadinas{
+    UIToolbar *toolbar=(UIToolbar *)[self.centerView viewWithTag:300];
+    UIBarButtonItem *TagBar;
+    for(UIBarButtonItem *bar in toolbar.items){if(bar.tag==100){TagBar=bar;}}
+    UIButton *btn=(UIButton *)[TagBar.customView viewWithTag:101];
+    
+    [btn setTransform:CGAffineTransformMakeRotation(degreesToRadinas(newRadinas))];
+//    CGAffineTransform currentTransform=btn.transform;
+//    CGAffineTransform newTransform=CGAffineTransformRotate(currentTransform, degreesToRadinas(newRadinas));
+//    [btn setTransform:newTransform];
 
+}
 - (void)panned:(UIPanGestureRecognizer*)panner {
+    if(_offset<80){
+        [self setArrowToolDegreesWithRadinas:0];
+    }else if (_offset>=80&&_offset<180){
+        [self setArrowToolDegreesWithRadinas:90];
+    }else{
+        [self setArrowToolDegreesWithRadinas:180];
+    }
+    //[self setArrowToolDegreesWithRadinas:90];
+    
     if (!_enabled) return;
     
     if (_offset == 0 && panner.state == UIGestureRecognizerStateBegan) {
@@ -2211,6 +2235,7 @@ static NSTimeInterval durationToAnimate(CGFloat pointsToAnimate, CGFloat velocit
 }
 
 - (void)panned:(UIPanGestureRecognizer*)panner orientation:(IIViewDeckOffsetOrientation)orientation {
+    
     CGFloat pv, m;
     IIViewDeckSide minSide, maxSide;
     if (orientation == IIViewDeckHorizontalOrientation) {
@@ -2958,34 +2983,34 @@ static const char* viewDeckControllerKey = "ViewDeckController";
     SEL vdcni = @selector(vdc_navigationItem);
     method_exchangeImplementations(class_getInstanceMethod(self, ni), class_getInstanceMethod(self, vdcni));
     
-    // view containment drop ins for <ios5
-    SEL willMoveToPVC = @selector(willMoveToParentViewController:);
-    SEL vdcWillMoveToPVC = @selector(vdc_willMoveToParentViewController:);
-    if (!class_getInstanceMethod(self, willMoveToPVC)) {
-        Method implementation = class_getInstanceMethod(self, vdcWillMoveToPVC);
-        class_addMethod([UIViewController class], willMoveToPVC, method_getImplementation(implementation), "v@:@"); 
-    }
-    
-    SEL didMoveToPVC = @selector(didMoveToParentViewController:);
-    SEL vdcDidMoveToPVC = @selector(vdc_didMoveToParentViewController:);
-    if (!class_getInstanceMethod(self, didMoveToPVC)) {
-        Method implementation = class_getInstanceMethod(self, vdcDidMoveToPVC);
-        class_addMethod([UIViewController class], didMoveToPVC, method_getImplementation(implementation), "v@:"); 
-    }
-    
-    SEL removeFromPVC = @selector(removeFromParentViewController);
-    SEL vdcRemoveFromPVC = @selector(vdc_removeFromParentViewController);
-    if (!class_getInstanceMethod(self, removeFromPVC)) {
-        Method implementation = class_getInstanceMethod(self, vdcRemoveFromPVC);
-        class_addMethod([UIViewController class], removeFromPVC, method_getImplementation(implementation), "v@:"); 
-    }
-    
-    SEL addCVC = @selector(addChildViewController:);
-    SEL vdcAddCVC = @selector(vdc_addChildViewController:);
-    if (!class_getInstanceMethod(self, addCVC)) {
-        Method implementation = class_getInstanceMethod(self, vdcAddCVC);
-        class_addMethod([UIViewController class], addCVC, method_getImplementation(implementation), "v@:@"); 
-    }
+//    // view containment drop ins for <ios5
+//    SEL willMoveToPVC = @selector(willMoveToParentViewController:);
+//    SEL vdcWillMoveToPVC = @selector(vdc_willMoveToParentViewController:);
+//    if (!class_getInstanceMethod(self, willMoveToPVC)) {
+//        Method implementation = class_getInstanceMethod(self, vdcWillMoveToPVC);
+//        class_addMethod([UIViewController class], willMoveToPVC, method_getImplementation(implementation), "v@:@"); 
+//    }
+//    
+//    SEL didMoveToPVC = @selector(didMoveToParentViewController:);
+//    SEL vdcDidMoveToPVC = @selector(vdc_didMoveToParentViewController:);
+//    if (!class_getInstanceMethod(self, didMoveToPVC)) {
+//        Method implementation = class_getInstanceMethod(self, vdcDidMoveToPVC);
+//        class_addMethod([UIViewController class], didMoveToPVC, method_getImplementation(implementation), "v@:"); 
+//    }
+//    
+//    SEL removeFromPVC = @selector(removeFromParentViewController);
+//    SEL vdcRemoveFromPVC = @selector(vdc_removeFromParentViewController);
+//    if (!class_getInstanceMethod(self, removeFromPVC)) {
+//        Method implementation = class_getInstanceMethod(self, vdcRemoveFromPVC);
+//        class_addMethod([UIViewController class], removeFromPVC, method_getImplementation(implementation), "v@:"); 
+//    }
+//    
+//    SEL addCVC = @selector(addChildViewController:);
+//    SEL vdcAddCVC = @selector(vdc_addChildViewController:);
+//    if (!class_getInstanceMethod(self, addCVC)) {
+//        Method implementation = class_getInstanceMethod(self, vdcAddCVC);
+//        class_addMethod([UIViewController class], addCVC, method_getImplementation(implementation), "v@:@"); 
+//    }
 }
 
 + (void)load {
@@ -3000,18 +3025,22 @@ static const char* viewDeckControllerKey = "ViewDeckController";
 
 - (void)vdc_addChildViewController:(UIViewController *)childController {
     // intentionally empty
+    
 }
 
 - (void)vdc_removeFromParentViewController {
     // intentionally empty
+    
 }
 
 - (void)vdc_willMoveToParentViewController:(UIViewController *)parent {
     // intentionally empty
+    
 }
 
 - (void)vdc_didMoveToParentViewController:(UIViewController *)parent {
     // intentionally empty
+    
 }
 
 

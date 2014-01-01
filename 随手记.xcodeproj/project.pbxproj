@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D65472771873322400B66979 /* main_month.png in Resources */ = {isa = PBXBuildFile; fileRef = D65472741873322400B66979 /* main_month.png */; };
+		D65472781873322400B66979 /* main_today.png in Resources */ = {isa = PBXBuildFile; fileRef = D65472751873322400B66979 /* main_today.png */; };
+		D65472791873322400B66979 /* main_week.png in Resources */ = {isa = PBXBuildFile; fileRef = D65472761873322400B66979 /* main_week.png */; };
+		D6562E8F1874428300748878 /* main_activity_bg_src.png in Resources */ = {isa = PBXBuildFile; fileRef = D6562E8E1874428300748878 /* main_activity_bg_src.png */; };
+		D6562E911874513B00748878 /* main_top_month_report_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = D6562E901874513B00748878 /* main_top_month_report_bg.png */; };
+		D6562E93187452F300748878 /* widget_battery_bg.9.png in Resources */ = {isa = PBXBuildFile; fileRef = D6562E92187452F300748878 /* widget_battery_bg.9.png */; };
+		D6562E981874530C00748878 /* widget_battery_bottom.9.png in Resources */ = {isa = PBXBuildFile; fileRef = D6562E941874530C00748878 /* widget_battery_bottom.9.png */; };
+		D6562E991874530C00748878 /* widget_battery_low.9.png in Resources */ = {isa = PBXBuildFile; fileRef = D6562E951874530C00748878 /* widget_battery_low.9.png */; };
+		D6562E9A1874530C00748878 /* widget_battery_middle.9.png in Resources */ = {isa = PBXBuildFile; fileRef = D6562E961874530C00748878 /* widget_battery_middle.9.png */; };
+		D6562E9B1874530C00748878 /* widget_battery_top.9.png in Resources */ = {isa = PBXBuildFile; fileRef = D6562E971874530C00748878 /* widget_battery_top.9.png */; };
+		D6562E9E1874579A00748878 /* TopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6562E9D1874579A00748878 /* TopCell.m */; };
+		D6562EA0187457AE00748878 /* TopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6562E9F187457AE00748878 /* TopCell.xib */; };
+		D6562EA818746B7D00748878 /* InventoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6562EA618746B7D00748878 /* InventoryViewController.m */; };
+		D6562EA918746B7D00748878 /* InventoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6562EA718746B7D00748878 /* InventoryViewController.xib */; };
+		D6562EAD1874734900748878 /* BudgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6562EAB1874734900748878 /* BudgetViewController.m */; };
+		D6562EAE1874734900748878 /* BudgetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6562EAC1874734900748878 /* BudgetViewController.xib */; };
+		D6562EB21874777900748878 /* InputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6562EB01874777900748878 /* InputViewController.m */; };
+		D6562EB31874777900748878 /* InputViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6562EB11874777900748878 /* InputViewController.xib */; };
 		D66C84581872881900B3A597 /* main_nav_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = D66C84501872881900B3A597 /* main_nav_arrow.png */; };
 		D66C84591872881900B3A597 /* main_nav_circle.png in Resources */ = {isa = PBXBuildFile; fileRef = D66C84511872881900B3A597 /* main_nav_circle.png */; };
 		D66C845A1872881900B3A597 /* nav_account.png in Resources */ = {isa = PBXBuildFile; fileRef = D66C84521872881900B3A597 /* nav_account.png */; };
@@ -15,6 +33,8 @@
 		D66C845D1872881900B3A597 /* nav_report.png in Resources */ = {isa = PBXBuildFile; fileRef = D66C84551872881900B3A597 /* nav_report.png */; };
 		D66C845E1872881900B3A597 /* nav_setting.png in Resources */ = {isa = PBXBuildFile; fileRef = D66C84561872881900B3A597 /* nav_setting.png */; };
 		D66C845F1872881900B3A597 /* nav_year_trans.png in Resources */ = {isa = PBXBuildFile; fileRef = D66C84571872881900B3A597 /* nav_year_trans.png */; };
+		D66C84621872A51600B3A597 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D66C84611872A51600B3A597 /* CustomCell.m */; };
+		D66C84641872A52F00B3A597 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D66C84631872A52F00B3A597 /* CustomCell.xib */; };
 		D6BE0E2C1871B68D00A8A137 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6BE0E2B1871B68D00A8A137 /* Foundation.framework */; };
 		D6BE0E2E1871B68D00A8A137 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6BE0E2D1871B68D00A8A137 /* CoreGraphics.framework */; };
 		D6BE0E301871B68D00A8A137 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6BE0E2F1871B68D00A8A137 /* UIKit.framework */; };
@@ -46,6 +66,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D65472741873322400B66979 /* main_month.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_month.png; sourceTree = "<group>"; };
+		D65472751873322400B66979 /* main_today.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_today.png; sourceTree = "<group>"; };
+		D65472761873322400B66979 /* main_week.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_week.png; sourceTree = "<group>"; };
+		D6562E8E1874428300748878 /* main_activity_bg_src.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_activity_bg_src.png; sourceTree = "<group>"; };
+		D6562E901874513B00748878 /* main_top_month_report_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_top_month_report_bg.png; sourceTree = "<group>"; };
+		D6562E92187452F300748878 /* widget_battery_bg.9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = widget_battery_bg.9.png; sourceTree = "<group>"; };
+		D6562E941874530C00748878 /* widget_battery_bottom.9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = widget_battery_bottom.9.png; sourceTree = "<group>"; };
+		D6562E951874530C00748878 /* widget_battery_low.9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = widget_battery_low.9.png; sourceTree = "<group>"; };
+		D6562E961874530C00748878 /* widget_battery_middle.9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = widget_battery_middle.9.png; sourceTree = "<group>"; };
+		D6562E971874530C00748878 /* widget_battery_top.9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = widget_battery_top.9.png; sourceTree = "<group>"; };
+		D6562E9C1874579A00748878 /* TopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopCell.h; sourceTree = "<group>"; };
+		D6562E9D1874579A00748878 /* TopCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopCell.m; sourceTree = "<group>"; };
+		D6562E9F187457AE00748878 /* TopCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopCell.xib; sourceTree = "<group>"; };
+		D6562EA518746B7D00748878 /* InventoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InventoryViewController.h; sourceTree = "<group>"; };
+		D6562EA618746B7D00748878 /* InventoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InventoryViewController.m; sourceTree = "<group>"; };
+		D6562EA718746B7D00748878 /* InventoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InventoryViewController.xib; sourceTree = "<group>"; };
+		D6562EAA1874734900748878 /* BudgetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BudgetViewController.h; sourceTree = "<group>"; };
+		D6562EAB1874734900748878 /* BudgetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BudgetViewController.m; sourceTree = "<group>"; };
+		D6562EAC1874734900748878 /* BudgetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BudgetViewController.xib; sourceTree = "<group>"; };
+		D6562EAF1874777900748878 /* InputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputViewController.h; sourceTree = "<group>"; };
+		D6562EB01874777900748878 /* InputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputViewController.m; sourceTree = "<group>"; };
+		D6562EB11874777900748878 /* InputViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputViewController.xib; sourceTree = "<group>"; };
 		D66C84501872881900B3A597 /* main_nav_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_nav_arrow.png; sourceTree = "<group>"; };
 		D66C84511872881900B3A597 /* main_nav_circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_nav_circle.png; sourceTree = "<group>"; };
 		D66C84521872881900B3A597 /* nav_account.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_account.png; sourceTree = "<group>"; };
@@ -54,6 +96,9 @@
 		D66C84551872881900B3A597 /* nav_report.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_report.png; sourceTree = "<group>"; };
 		D66C84561872881900B3A597 /* nav_setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_setting.png; sourceTree = "<group>"; };
 		D66C84571872881900B3A597 /* nav_year_trans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_year_trans.png; sourceTree = "<group>"; };
+		D66C84601872A51600B3A597 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		D66C84611872A51600B3A597 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		D66C84631872A52F00B3A597 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		D6BE0E281871B68D00A8A137 /* 随手记.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "随手记.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6BE0E2B1871B68D00A8A137 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D6BE0E2D1871B68D00A8A137 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -106,9 +151,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D6562EA11874699300748878 /* 自定义Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D66C84601872A51600B3A597 /* CustomCell.h */,
+				D66C84611872A51600B3A597 /* CustomCell.m */,
+				D66C84631872A52F00B3A597 /* CustomCell.xib */,
+				D6562E9C1874579A00748878 /* TopCell.h */,
+				D6562E9D1874579A00748878 /* TopCell.m */,
+				D6562E9F187457AE00748878 /* TopCell.xib */,
+			);
+			name = "自定义Cell";
+			sourceTree = "<group>";
+		};
+		D6562EA318746A5300748878 /* 一级View */ = {
+			isa = PBXGroup;
+			children = (
+				D6BE0E611871B8B600A8A137 /* ViewController.h */,
+				D6BE0E621871B8B600A8A137 /* ViewController.m */,
+				D6BE0E631871B8B600A8A137 /* ViewController.xib */,
+				D6BE0E661871B8E500A8A137 /* LeftModuleViewController.h */,
+				D6BE0E671871B8E500A8A137 /* LeftModuleViewController.m */,
+				D6BE0E681871B8E500A8A137 /* LeftModuleViewController.xib */,
+			);
+			name = "一级View";
+			sourceTree = "<group>";
+		};
+		D6562EA418746A9100748878 /* 二级View */ = {
+			isa = PBXGroup;
+			children = (
+				D6562EA518746B7D00748878 /* InventoryViewController.h */,
+				D6562EA618746B7D00748878 /* InventoryViewController.m */,
+				D6562EA718746B7D00748878 /* InventoryViewController.xib */,
+				D6562EAA1874734900748878 /* BudgetViewController.h */,
+				D6562EAB1874734900748878 /* BudgetViewController.m */,
+				D6562EAC1874734900748878 /* BudgetViewController.xib */,
+				D6562EAF1874777900748878 /* InputViewController.h */,
+				D6562EB01874777900748878 /* InputViewController.m */,
+				D6562EB11874777900748878 /* InputViewController.xib */,
+			);
+			name = "二级View";
+			sourceTree = "<group>";
+		};
 		D66C844F1872881900B3A597 /* icon */ = {
 			isa = PBXGroup;
 			children = (
+				D6562E901874513B00748878 /* main_top_month_report_bg.png */,
+				D6562E92187452F300748878 /* widget_battery_bg.9.png */,
+				D6562E941874530C00748878 /* widget_battery_bottom.9.png */,
+				D6562E951874530C00748878 /* widget_battery_low.9.png */,
+				D6562E961874530C00748878 /* widget_battery_middle.9.png */,
+				D6562E971874530C00748878 /* widget_battery_top.9.png */,
+				D6562E8E1874428300748878 /* main_activity_bg_src.png */,
+				D65472741873322400B66979 /* main_month.png */,
+				D65472751873322400B66979 /* main_today.png */,
+				D65472761873322400B66979 /* main_week.png */,
 				D66C84501872881900B3A597 /* main_nav_arrow.png */,
 				D66C84511872881900B3A597 /* main_nav_circle.png */,
 				D66C84521872881900B3A597 /* nav_account.png */,
@@ -157,12 +254,9 @@
 				D6BE0E5A1871B87700A8A137 /* 主页滑动 */,
 				D6BE0E3A1871B68D00A8A137 /* AppDelegate.h */,
 				D6BE0E3B1871B68D00A8A137 /* AppDelegate.m */,
-				D6BE0E611871B8B600A8A137 /* ViewController.h */,
-				D6BE0E621871B8B600A8A137 /* ViewController.m */,
-				D6BE0E631871B8B600A8A137 /* ViewController.xib */,
-				D6BE0E661871B8E500A8A137 /* LeftModuleViewController.h */,
-				D6BE0E671871B8E500A8A137 /* LeftModuleViewController.m */,
-				D6BE0E681871B8E500A8A137 /* LeftModuleViewController.xib */,
+				D6562EA318746A5300748878 /* 一级View */,
+				D6562EA418746A9100748878 /* 二级View */,
+				D6562EA11874699300748878 /* 自定义Cell */,
 				D6BE0E3D1871B68D00A8A137 /* Images.xcassets */,
 				D66C844F1872881900B3A597 /* icon */,
 				D6BE0E321871B68D00A8A137 /* Supporting Files */,
@@ -285,18 +379,33 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6562E911874513B00748878 /* main_top_month_report_bg.png in Resources */,
+				D65472791873322400B66979 /* main_week.png in Resources */,
+				D6562E9B1874530C00748878 /* widget_battery_top.9.png in Resources */,
+				D66C84641872A52F00B3A597 /* CustomCell.xib in Resources */,
+				D6562E981874530C00748878 /* widget_battery_bottom.9.png in Resources */,
 				D66C845B1872881900B3A597 /* nav_budget.png in Resources */,
 				D66C845F1872881900B3A597 /* nav_year_trans.png in Resources */,
+				D65472771873322400B66979 /* main_month.png in Resources */,
 				D66C845D1872881900B3A597 /* nav_report.png in Resources */,
+				D6562EB31874777900748878 /* InputViewController.xib in Resources */,
+				D6562E8F1874428300748878 /* main_activity_bg_src.png in Resources */,
 				D6BE0E361871B68D00A8A137 /* InfoPlist.strings in Resources */,
 				D66C84581872881900B3A597 /* main_nav_arrow.png in Resources */,
+				D6562E9A1874530C00748878 /* widget_battery_middle.9.png in Resources */,
 				D66C845A1872881900B3A597 /* nav_account.png in Resources */,
 				D66C845C1872881900B3A597 /* nav_edit_btn.png in Resources */,
+				D6562EA0187457AE00748878 /* TopCell.xib in Resources */,
 				D66C84591872881900B3A597 /* main_nav_circle.png in Resources */,
 				D6BE0E6A1871B8E500A8A137 /* LeftModuleViewController.xib in Resources */,
+				D65472781873322400B66979 /* main_today.png in Resources */,
+				D6562EAE1874734900748878 /* BudgetViewController.xib in Resources */,
 				D66C845E1872881900B3A597 /* nav_setting.png in Resources */,
 				D6BE0E651871B8B600A8A137 /* ViewController.xib in Resources */,
 				D6BE0E3E1871B68D00A8A137 /* Images.xcassets in Resources */,
+				D6562E93187452F300748878 /* widget_battery_bg.9.png in Resources */,
+				D6562EA918746B7D00748878 /* InventoryViewController.xib in Resources */,
+				D6562E991874530C00748878 /* widget_battery_low.9.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,8 +428,13 @@
 				D6BE0E691871B8E500A8A137 /* LeftModuleViewController.m in Sources */,
 				D6BE0E601871B87700A8A137 /* IIWrapController.m in Sources */,
 				D6BE0E381871B68D00A8A137 /* main.m in Sources */,
+				D66C84621872A51600B3A597 /* CustomCell.m in Sources */,
+				D6562EA818746B7D00748878 /* InventoryViewController.m in Sources */,
 				D6BE0E5F1871B87700A8A137 /* IIViewDeckController.m in Sources */,
+				D6562EB21874777900748878 /* InputViewController.m in Sources */,
 				D6BE0E641871B8B600A8A137 /* ViewController.m in Sources */,
+				D6562E9E1874579A00748878 /* TopCell.m in Sources */,
+				D6562EAD1874734900748878 /* BudgetViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

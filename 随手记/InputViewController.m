@@ -1,18 +1,18 @@
 //
-//  LeftModuleViewController.m
+//  InputViewController.m
 //  随手记
 //
-//  Created by OPSOFT on 13-12-30.
-//  Copyright (c) 2013年 OPSOFT. All rights reserved.
+//  Created by OPSOFT on 14-1-2.
+//  Copyright (c) 2014年 OPSOFT. All rights reserved.
 //
 
-#import "LeftModuleViewController.h"
+#import "InputViewController.h"
 
-@interface LeftModuleViewController ()
+@interface InputViewController ()
 
 @end
 
-@implementation LeftModuleViewController
+@implementation InputViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -23,10 +23,16 @@
     return self;
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBarHidden=NO;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     self.view.backgroundColor=[UIColor grayColor];
+    self.navigationController.navigationBar.barTintColor=[UIColor lightGrayColor];
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -35,7 +41,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-
 
 @end

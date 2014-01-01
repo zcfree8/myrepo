@@ -22,9 +22,10 @@
     LeftModuleViewController *leftView=[[LeftModuleViewController alloc]init];
     
     IIViewDeckController *vc=[[IIViewDeckController alloc]initWithCenterViewController:centerNav leftViewController:leftView];
-    vc.leftSize=40;
+    vc.leftSize=60;
     self.viewDeckController=vc;
     self.window.rootViewController=self.viewDeckController;
+    self.window.backgroundColor=[UIColor grayColor];
     [self.window makeKeyAndVisible];
     return YES;
 }
