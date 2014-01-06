@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D62A7B6D187868D700FF12FB /* suite_bg_for_travel.png in Resources */ = {isa = PBXBuildFile; fileRef = D62A7B6C187868D700FF12FB /* suite_bg_for_travel.png */; };
 		D65472771873322400B66979 /* main_month.png in Resources */ = {isa = PBXBuildFile; fileRef = D65472741873322400B66979 /* main_month.png */; };
 		D65472781873322400B66979 /* main_today.png in Resources */ = {isa = PBXBuildFile; fileRef = D65472751873322400B66979 /* main_today.png */; };
 		D65472791873322400B66979 /* main_week.png in Resources */ = {isa = PBXBuildFile; fileRef = D65472761873322400B66979 /* main_week.png */; };
@@ -66,6 +67,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D62A7B6C187868D700FF12FB /* suite_bg_for_travel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = suite_bg_for_travel.png; sourceTree = "<group>"; };
 		D65472741873322400B66979 /* main_month.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_month.png; sourceTree = "<group>"; };
 		D65472751873322400B66979 /* main_today.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_today.png; sourceTree = "<group>"; };
 		D65472761873322400B66979 /* main_week.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_week.png; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 		D66C844F1872881900B3A597 /* icon */ = {
 			isa = PBXGroup;
 			children = (
+				D62A7B6C187868D700FF12FB /* suite_bg_for_travel.png */,
 				D6562E901874513B00748878 /* main_top_month_report_bg.png */,
 				D6562E92187452F300748878 /* widget_battery_bg.9.png */,
 				D6562E941874530C00748878 /* widget_battery_bottom.9.png */,
@@ -402,6 +405,7 @@
 				D6562EAE1874734900748878 /* BudgetViewController.xib in Resources */,
 				D66C845E1872881900B3A597 /* nav_setting.png in Resources */,
 				D6BE0E651871B8B600A8A137 /* ViewController.xib in Resources */,
+				D62A7B6D187868D700FF12FB /* suite_bg_for_travel.png in Resources */,
 				D6BE0E3E1871B68D00A8A137 /* Images.xcassets in Resources */,
 				D6562E93187452F300748878 /* widget_battery_bg.9.png in Resources */,
 				D6562EA918746B7D00748878 /* InventoryViewController.xib in Resources */,
