@@ -25,7 +25,7 @@
     vc.leftSize=60;
     self.viewDeckController=vc;
     self.window.rootViewController=self.viewDeckController;
-    self.window.backgroundColor=[UIColor grayColor];
+    self.window.backgroundColor=[UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
 }
