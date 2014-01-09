@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BudgetViewController : UIViewController
+@interface BudgetViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 
+@property(nonatomic,strong)UITableView *DTableView;
+@property(nonatomic,strong)UIView *TopView;
+@property(nonatomic,retain)NSArray *InfoArr;
 @end

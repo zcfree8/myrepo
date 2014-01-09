@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		D62A7B6D187868D700FF12FB /* suite_bg_for_travel.png in Resources */ = {isa = PBXBuildFile; fileRef = D62A7B6C187868D700FF12FB /* suite_bg_for_travel.png */; };
+		D62D0832187EA7750051AB70 /* BudgetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D62D0831187EA7750051AB70 /* BudgetCell.m */; };
+		D62D0834187EA7910051AB70 /* BudgetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D62D0833187EA7910051AB70 /* BudgetCell.xib */; };
+		D62D0836187EC8A90051AB70 /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = D62D0835187EC8A90051AB70 /* config.plist */; };
+		D62D083A187ECB190051AB70 /* d_fd.png in Resources */ = {isa = PBXBuildFile; fileRef = D62D0839187ECB190051AB70 /* d_fd.png */; };
+		D62D083C187ECB2E0051AB70 /* d_qcp.png in Resources */ = {isa = PBXBuildFile; fileRef = D62D083B187ECB2E0051AB70 /* d_qcp.png */; };
+		D62D083E187ECB9E0051AB70 /* icon_xxyl_fbjh.png in Resources */ = {isa = PBXBuildFile; fileRef = D62D083D187ECB9E0051AB70 /* icon_xxyl_fbjh.png */; };
+		D62D0840187ECBAA0051AB70 /* icon_xxyl_lydj.png in Resources */ = {isa = PBXBuildFile; fileRef = D62D083F187ECBAA0051AB70 /* icon_xxyl_lydj.png */; };
+		D62D0842187ECBEA0051AB70 /* icon_spjs_zwwc.png in Resources */ = {isa = PBXBuildFile; fileRef = D62D0841187ECBEA0051AB70 /* icon_spjs_zwwc.png */; };
+		D62D0844187ECBFD0051AB70 /* icon_jrbx_ajhk.png in Resources */ = {isa = PBXBuildFile; fileRef = D62D0843187ECBFD0051AB70 /* icon_jrbx_ajhk.png */; };
+		D62D0848187ED0D50051AB70 /* BudgetDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D62D0846187ED0D50051AB70 /* BudgetDViewController.m */; };
+		D62D0849187ED0D50051AB70 /* BudgetDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D62D0847187ED0D50051AB70 /* BudgetDViewController.xib */; };
 		D65472771873322400B66979 /* main_month.png in Resources */ = {isa = PBXBuildFile; fileRef = D65472741873322400B66979 /* main_month.png */; };
 		D65472781873322400B66979 /* main_today.png in Resources */ = {isa = PBXBuildFile; fileRef = D65472751873322400B66979 /* main_today.png */; };
 		D65472791873322400B66979 /* main_week.png in Resources */ = {isa = PBXBuildFile; fileRef = D65472761873322400B66979 /* main_week.png */; };
@@ -73,6 +84,19 @@
 
 /* Begin PBXFileReference section */
 		D62A7B6C187868D700FF12FB /* suite_bg_for_travel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = suite_bg_for_travel.png; sourceTree = "<group>"; };
+		D62D0830187EA7750051AB70 /* BudgetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BudgetCell.h; sourceTree = "<group>"; };
+		D62D0831187EA7750051AB70 /* BudgetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BudgetCell.m; sourceTree = "<group>"; };
+		D62D0833187EA7910051AB70 /* BudgetCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BudgetCell.xib; sourceTree = "<group>"; };
+		D62D0835187EC8A90051AB70 /* config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
+		D62D0839187ECB190051AB70 /* d_fd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d_fd.png; sourceTree = "<group>"; };
+		D62D083B187ECB2E0051AB70 /* d_qcp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d_qcp.png; sourceTree = "<group>"; };
+		D62D083D187ECB9E0051AB70 /* icon_xxyl_fbjh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_xxyl_fbjh.png; sourceTree = "<group>"; };
+		D62D083F187ECBAA0051AB70 /* icon_xxyl_lydj.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_xxyl_lydj.png; sourceTree = "<group>"; };
+		D62D0841187ECBEA0051AB70 /* icon_spjs_zwwc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_spjs_zwwc.png; sourceTree = "<group>"; };
+		D62D0843187ECBFD0051AB70 /* icon_jrbx_ajhk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_jrbx_ajhk.png; sourceTree = "<group>"; };
+		D62D0845187ED0D50051AB70 /* BudgetDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BudgetDViewController.h; sourceTree = "<group>"; };
+		D62D0846187ED0D50051AB70 /* BudgetDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BudgetDViewController.m; sourceTree = "<group>"; };
+		D62D0847187ED0D50051AB70 /* BudgetDViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BudgetDViewController.xib; sourceTree = "<group>"; };
 		D65472741873322400B66979 /* main_month.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_month.png; sourceTree = "<group>"; };
 		D65472751873322400B66979 /* main_today.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_today.png; sourceTree = "<group>"; };
 		D65472761873322400B66979 /* main_week.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_week.png; sourceTree = "<group>"; };
@@ -173,6 +197,9 @@
 				D6562E9C1874579A00748878 /* TopCell.h */,
 				D6562E9D1874579A00748878 /* TopCell.m */,
 				D6562E9F187457AE00748878 /* TopCell.xib */,
+				D62D0830187EA7750051AB70 /* BudgetCell.h */,
+				D62D0831187EA7750051AB70 /* BudgetCell.m */,
+				D62D0833187EA7910051AB70 /* BudgetCell.xib */,
 			);
 			name = "自定义Cell";
 			sourceTree = "<group>";
@@ -204,6 +231,7 @@
 				D6562EAF1874777900748878 /* InputViewController.h */,
 				D6562EB01874777900748878 /* InputViewController.m */,
 				D6562EB11874777900748878 /* InputViewController.xib */,
+				D6562EA11874699300748878 /* 自定义Cell */,
 			);
 			name = "二级View";
 			sourceTree = "<group>";
@@ -211,6 +239,9 @@
 		D66445C9187AFD3700399A91 /* 三级View */ = {
 			isa = PBXGroup;
 			children = (
+				D62D0845187ED0D50051AB70 /* BudgetDViewController.h */,
+				D62D0846187ED0D50051AB70 /* BudgetDViewController.m */,
+				D62D0847187ED0D50051AB70 /* BudgetDViewController.xib */,
 			);
 			name = "三级View";
 			sourceTree = "<group>";
@@ -218,6 +249,12 @@
 		D66C844F1872881900B3A597 /* icon */ = {
 			isa = PBXGroup;
 			children = (
+				D62D0843187ECBFD0051AB70 /* icon_jrbx_ajhk.png */,
+				D62D0841187ECBEA0051AB70 /* icon_spjs_zwwc.png */,
+				D62D083F187ECBAA0051AB70 /* icon_xxyl_lydj.png */,
+				D62D083D187ECB9E0051AB70 /* icon_xxyl_fbjh.png */,
+				D62D083B187ECB2E0051AB70 /* d_qcp.png */,
+				D62D0839187ECB190051AB70 /* d_fd.png */,
 				D66445D3187B05CE00399A91 /* topGrey.png */,
 				D66445D1187B04F600399A91 /* topNew.png */,
 				D66445CC187B034100399A91 /* top.png */,
@@ -284,7 +321,6 @@
 				D6562EA318746A5300748878 /* 一级View */,
 				D6562EA418746A9100748878 /* 二级View */,
 				D66445C9187AFD3700399A91 /* 三级View */,
-				D6562EA11874699300748878 /* 自定义Cell */,
 				D6BE0E3D1871B68D00A8A137 /* Images.xcassets */,
 				D66C844F1872881900B3A597 /* icon */,
 				D6BE0E321871B68D00A8A137 /* Supporting Files */,
@@ -299,6 +335,7 @@
 				D6BE0E341871B68D00A8A137 /* InfoPlist.strings */,
 				D6BE0E371871B68D00A8A137 /* main.m */,
 				D6BE0E391871B68D00A8A137 /* 随手记-Prefix.pch */,
+				D62D0835187EC8A90051AB70 /* config.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -407,13 +444,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D62D0844187ECBFD0051AB70 /* icon_jrbx_ajhk.png in Resources */,
+				D62D0840187ECBAA0051AB70 /* icon_xxyl_lydj.png in Resources */,
 				D6562E911874513B00748878 /* main_top_month_report_bg.png in Resources */,
 				D65472791873322400B66979 /* main_week.png in Resources */,
 				D6562E9B1874530C00748878 /* widget_battery_top.9.png in Resources */,
 				D66445CD187B034100399A91 /* top.png in Resources */,
 				D66C84641872A52F00B3A597 /* CustomCell.xib in Resources */,
 				D6562E981874530C00748878 /* widget_battery_bottom.9.png in Resources */,
+				D62D083E187ECB9E0051AB70 /* icon_xxyl_fbjh.png in Resources */,
 				D66C845B1872881900B3A597 /* nav_budget.png in Resources */,
+				D62D0842187ECBEA0051AB70 /* icon_spjs_zwwc.png in Resources */,
+				D62D083C187ECB2E0051AB70 /* d_qcp.png in Resources */,
 				D66C845F1872881900B3A597 /* nav_year_trans.png in Resources */,
 				D66445D4187B05CE00399A91 /* topGrey.png in Resources */,
 				D65472771873322400B66979 /* main_month.png in Resources */,
@@ -426,11 +468,13 @@
 				D66445D2187B04F600399A91 /* topNew.png in Resources */,
 				D66C845A1872881900B3A597 /* nav_account.png in Resources */,
 				D66C845C1872881900B3A597 /* nav_edit_btn.png in Resources */,
+				D62D083A187ECB190051AB70 /* d_fd.png in Resources */,
 				D6562EA0187457AE00748878 /* TopCell.xib in Resources */,
 				D66C84591872881900B3A597 /* main_nav_circle.png in Resources */,
 				D66445CB187AFE3600399A91 /* icon_action_bar_refresh.png in Resources */,
 				D6BE0E6A1871B8E500A8A137 /* LeftModuleViewController.xib in Resources */,
 				D65472781873322400B66979 /* main_today.png in Resources */,
+				D62D0836187EC8A90051AB70 /* config.plist in Resources */,
 				D6562EAE1874734900748878 /* BudgetViewController.xib in Resources */,
 				D66C845E1872881900B3A597 /* nav_setting.png in Resources */,
 				D6BE0E651871B8B600A8A137 /* ViewController.xib in Resources */,
@@ -439,6 +483,8 @@
 				D6562E93187452F300748878 /* widget_battery_bg.9.png in Resources */,
 				D6562EA918746B7D00748878 /* InventoryViewController.xib in Resources */,
 				D6562E991874530C00748878 /* widget_battery_low.9.png in Resources */,
+				D62D0834187EA7910051AB70 /* BudgetCell.xib in Resources */,
+				D62D0849187ED0D50051AB70 /* BudgetDViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,12 +506,14 @@
 				D66445D0187B03A800399A91 /* UINavigationBar+customBar.m in Sources */,
 				D6BE0E3C1871B68D00A8A137 /* AppDelegate.m in Sources */,
 				D6BE0E691871B8E500A8A137 /* LeftModuleViewController.m in Sources */,
+				D62D0832187EA7750051AB70 /* BudgetCell.m in Sources */,
 				D6BE0E601871B87700A8A137 /* IIWrapController.m in Sources */,
 				D6BE0E381871B68D00A8A137 /* main.m in Sources */,
 				D66C84621872A51600B3A597 /* CustomCell.m in Sources */,
 				D6562EA818746B7D00748878 /* InventoryViewController.m in Sources */,
 				D6BE0E5F1871B87700A8A137 /* IIViewDeckController.m in Sources */,
 				D6562EB21874777900748878 /* InputViewController.m in Sources */,
+				D62D0848187ED0D50051AB70 /* BudgetDViewController.m in Sources */,
 				D6BE0E641871B8B600A8A137 /* ViewController.m in Sources */,
 				D6562E9E1874579A00748878 /* TopCell.m in Sources */,
 				D6562EAD1874734900748878 /* BudgetViewController.m in Sources */,

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ys</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>旅游交通费</string>
+			<key>pic</key>
+			<string>d_qcp</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>旅游住宿费</string>
+			<key>pic</key>
+			<string>d_fd</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>旅游娱乐费</string>
+			<key>pic</key>
+			<string>icon_xxyl_fbjh</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>旅游餐饮费</string>
+			<key>pic</key>
+			<string>icon_spjs_zwwc</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>其他消费</string>
+			<key>pic</key>
+			<string>icon_jrbx_ajhk</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>旅游用品</string>
+			<key>pic</key>
+			<string>icon_xxyl_lydj</string>
+		</dict>
+	</array>
+</dict>
+</plist>
