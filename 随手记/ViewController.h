@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "IIViewDeckController.h"
+#import "LDProgressView.h"
 @interface ViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 
 - (IBAction)arrow:(id)sender;
@@ -16,4 +17,6 @@
 
 @property(strong,nonatomic)UITableView *ATableView;
 @property(strong,nonatomic)UITableView *BTableView;
+
+@property(nonatomic,strong)LDProgressView *progressView;
 @end

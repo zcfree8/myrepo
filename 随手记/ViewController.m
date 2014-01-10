@@ -13,6 +13,7 @@
 #import "BudgetViewController.h"
 #import "InputViewController.h"
 #define A self.ATableView
+#define degreesToRadinas(x) (M_PI*(x)/180.0)
 @interface ViewController ()
 
 @end
@@ -92,6 +93,16 @@
     self.ATableView.scrollEnabled=NO;
     self.ATableView.dataSource=self;
     [self.view addSubview:self.ATableView];
+    
+    self.progressView=[[LDProgressView alloc]initWithFrame:CGRectMake(8, 8, 64, 134)];
+    self.progressView.animate=@YES;
+    self.progressView.progress=0.4;
+    self.progressView.borderRadius=@8;
+    self.progressView.showText=@NO;
+    //self.progressView.type=LDProgressSolid;
+    self.progressView.color = [UIColor colorWithRed:0.7 green:0.6 blue:0.5 alpha:0.6];
+    [battery addSubview:self.progressView];
+    [self.progressView setTransform:CGAffineTransformMakeRotation(degreesToRadinas(180))];
     
     
     // Do any additional setup after loading the view from its nib.
