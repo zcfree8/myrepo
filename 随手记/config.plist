@@ -61,7 +61,26 @@
 			<key>pic</key>
 			<string>icon_yfsp</string>
 			<key>next</key>
-			<array/>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>衣服裤子</string>
+					<key>pic</key>
+					<string></string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>鞋帽包包</string>
+					<key>pic</key>
+					<string></string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>化妆饰品</string>
+					<key>pic</key>
+					<string></string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>name</key>

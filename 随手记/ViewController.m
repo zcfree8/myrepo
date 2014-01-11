@@ -34,8 +34,8 @@
     [super viewWillAppear:animated];
     self.navigationController.navigationBarHidden=YES;
 }
-- (void)viewDidLoad
-{
+
+- (void)viewDidLoad{
     [super viewDidLoad];
     self.view.backgroundColor=[UIColor grayColor];
     UIView *SubView=[[UIView alloc]initWithFrame:CGRectMake(0, 20, 320, 350)];
@@ -108,6 +108,7 @@
     // Do any additional setup after loading the view from its nib.
 }
 
+
 -(void)UserClick:(id)sender{
     BudgetViewController *Budget=[[BudgetViewController alloc]initWithNibName:@"BudgetViewController" bundle:nil];
     [self.navigationController pushViewController:Budget animated:YES];
@@ -118,6 +119,8 @@
     [self.navigationController pushViewController:Input animated:YES];
     
 }
+
+#pragma mark tableView
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (tableView==A) {
@@ -206,20 +209,18 @@
 }
 
 -(NSString *)getBeginAndEndWith:(NSDate *)newDate and:(NSCalendarUnit)calendarUnit{
-    if(newDate==nil){
+    if(newDate==nil)
         newDate=[NSDate date];
-    }
     double interval=0;
     NSDate *beginDate=nil;
     NSDate *endDate=nil;
     NSCalendar *calendar=[NSCalendar currentCalendar];
     [calendar setFirstWeekday:1];
     BOOL ok=[calendar rangeOfUnit:calendarUnit startDate:&beginDate interval:&interval forDate:newDate];
-    if(ok){
+    if(ok)
         endDate=[beginDate dateByAddingTimeInterval:interval-1];
-    }else{
+    else
         return nil;
-    }
     NSDateFormatter *myDateFormatter=[[NSDateFormatter alloc]init];
     [myDateFormatter setDateFormat:@"MM月dd日"];
     NSString *beginString=[myDateFormatter stringFromDate:beginDate];
