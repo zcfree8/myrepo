@@ -90,24 +90,37 @@
     labelky.font=[UIFont fontWithName:@"Helvetica-Bold" size:12];
     [self.TopView addSubview:labelky];
     
-    UIImageView *imageView=[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"head_icon_edit"]];
-    imageView.frame=CGRectMake(230, 12, 15, 15);
-    [self.TopView addSubview:imageView];
-    
-    self.labelAll=[[UILabel alloc]initWithFrame:CGRectMake(255, 10, 50, 20)];
-    self.labelAll.text=@"¥0.00";
+    self.labelAll=[[UITextField alloc]initWithFrame:CGRectMake(275, 10, 50, 20)];
+    self.labelAll.text=@"0.00";
     self.labelAll.textColor=[UIColor whiteColor];
+    self.labelAll.returnKeyType=UIReturnKeyDone;
+    [self.labelAll addTarget:self action:@selector(didEndOnExit:) forControlEvents:UIControlEventEditingDidEndOnExit];
+    [self.labelAll addTarget:self action:@selector(appendHighlightedColor) forControlEvents:UIControlEventTouchDown];
+    [self.labelAll addTarget:self action:@selector(removeHighlightColor) forControlEvents:UIControlEventTouchCancel|UIControlEventTouchDragOutside|UIControlEventTouchUpOutside|UIControlEventTouchUpInside|UIControlEventEditingDidEndOnExit];
+    self.labelAll.delegate=self;
+    self.labelAll.keyboardType=UIKeyboardTypeNumbersAndPunctuation;
     self.labelAll.font=[UIFont fontWithName:@"Helvetica-Bold" size:18];
     [self.TopView addSubview:self.labelAll];
+
+    
+    UIImageView *imageView=[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"head_icon_edit"]];
+    imageView.frame=CGRectMake(self.labelAll.frame.origin.x-35, 12, 15, 15);
+    [self.TopView addSubview:imageView];
+    
+    UILabel *labelP=[[UILabel alloc]initWithFrame:CGRectMake(self.labelAll.frame.origin.x-12, 12, 15, 15)];
+    labelP.text=@"¥";
+    labelP.textColor=[UIColor whiteColor];
+    labelP.font=[UIFont fontWithName:@"Helvetica-Bold" size:15];
+    [self.TopView addSubview:labelP];
     
     self.labelEnable=[[UILabel alloc]initWithFrame:CGRectMake(110, 55, 40, 15)];
-    self.labelEnable.text=@"¥0.00";
+    self.labelEnable.text=@"¥ 0.00";
     self.labelEnable.textColor=[UIColor whiteColor];
     self.labelEnable.font=[UIFont fontWithName:@"Helvetica-Bold"  size:14];
     [self.TopView addSubview:self.labelEnable];
     
     self.labelable=[[UILabel alloc]initWithFrame:CGRectMake(270, 55, 40, 15)];
-    self.labelable.text=@"¥0.00";
+    self.labelable.text=@"¥ 0.00";
     self.labelable.textColor=[UIColor whiteColor];
     self.labelable.font=[UIFont fontWithName:@"Helvetica-Bold"  size:14];
     [self.TopView addSubview:self.labelable];
@@ -117,9 +130,31 @@
     self.labelshow.textColor=[UIColor whiteColor];
     self.labelshow.font=[UIFont fontWithName:@"Helvetica-Bold"  size:12];
     [self.TopView addSubview:self.labelshow];
+    [self.labelshow setUserInteractionEnabled:TRUE];
+    UIControl *actionView=[[UIControl alloc]initWithFrame:self.labelshow.bounds];
+    [actionView setBackgroundColor:[UIColor clearColor]];
+    [actionView addTarget:self action:@selector(Tap) forControlEvents:UIControlEventTouchUpInside];
+    [self.labelshow addSubview:actionView];
+    [self.labelshow sendSubviewToBack:actionView];
+    
 }
 
+-(void)appendHighlightedColor{
+    self.labelAll.textColor=[UIColor redColor];
+}
 
+-(void)removeHighlightColor{
+    self.labelAll.textColor=[UIColor whiteColor];
+}
+
+- (void)didEndOnExit:(id)sender {
+    [sender resignFirstResponder];
+    self.labelable.text=[NSString stringWithFormat:@"¥ %@",self.labelAll.text];
+}
+
+-(void)Tap{
+    [self.labelAll becomeFirstResponder];
+}
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 60;
