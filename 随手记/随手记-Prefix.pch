@@ -13,4 +13,9 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+    #import "FMDatabase.h"
+    #import "FMDatabaseAdditions.h"
+    #import "FMDatabasePool.h"
+    #import "FMDatabaseQueue.h"
+#define FMDBQuickCheck(SomeBool) { if (!(SomeBool)) { NSLog(@"Failure on line %d", __LINE__); abort(); } }
 #endif

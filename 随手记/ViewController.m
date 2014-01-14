@@ -13,6 +13,7 @@
 #import "BudgetViewController.h"
 #import "InputViewController.h"
 #define A self.ATableView
+#define B self.BTableView
 #define degreesToRadinas(x) (M_PI*(x)/180.0)
 @interface ViewController ()
 
