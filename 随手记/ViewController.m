@@ -110,6 +110,19 @@
 }
 
 
+-(void)GetData{
+    NSArray *paths=NSSearchPathForDirectoriesInDomains(NSDocumentationDirectory, NSUserDomainMask, YES);
+    NSString *documentDirectory=[paths objectAtIndex:0];
+    NSString *dbPath=[documentDirectory stringByAppendingString:@"MyDatabase.db"];
+    NSFileManager *fileManager=[NSFileManager defaultManager];
+    [fileManager removeItemAtPath:dbPath error:nil];
+    FMDatabase *db=[FMDatabase databaseWithPath:dbPath];
+    
+    if(![db open]){
+        NSLog(@"Could not open db.");
+    }
+}
+
 -(void)UserClick:(id)sender{
     BudgetViewController *Budget=[[BudgetViewController alloc]initWithNibName:@"BudgetViewController" bundle:nil];
     [self.navigationController pushViewController:Budget animated:YES];
