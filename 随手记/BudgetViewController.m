@@ -139,6 +139,8 @@
     
 }
 
+
+#pragma mark
 -(void)appendHighlightedColor{
     self.labelAll.textColor=[UIColor redColor];
 }
